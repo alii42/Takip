@@ -1,0 +1,11 @@
+{
+  "name": "İlim Takip",
+  "short_name": "İlim Takip",
+  "description": "Günlük ilim, ders ve alışkanlık takip uygulaması",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f4f6f1",
+  "theme_color": "#173f35",
+  "icons": [{"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}
