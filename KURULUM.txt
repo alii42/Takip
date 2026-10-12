@@ -1,19 +1,15 @@
-İLİM TAKİP — ÜCRETSİZ ÇEVRİMDIŞI KURULUM
+İLİM TAKİP — GÜNCELLEME PAKETİ
 
-ÖNEMLİ: index.html dosyasını tek başına indirip açmak gerçek PWA kurulumu sağlamaz. Service Worker için HTTPS adresi gerekir. Bu paketi bir kez ücretsiz HTTPS statik barındırmaya koyup tabletten bir kez açtıktan sonra uygulama çevrimdışı kullanılabilir.
+Dosyalar GitHub Pages deposunun ana dizinine yüklenmelidir:
+- index.html
+- manifest.webmanifest
+- sw.js
+- icon.svg
+- KURULUM.txt
 
-EN KOLAY YOL: GitHub Pages (ücretsiz)
-1. İnternet olan bir anda github.com adresinde ücretsiz hesap oluştur / giriş yap.
-2. New repository oluştur; adını ilim-takip yap ve Public seç.
-3. Bu ZIP'i çıkar. İçindeki index.html, manifest.webmanifest, sw.js, icon.svg ve KURULUM.txt dosyalarını repository'nin ana dizinine yükle (Add file > Upload files > Commit changes).
-4. Repository > Settings > Pages bölümüne gir. Build and deployment altında Deploy from a branch seç; Branch olarak main ve /(root) seçip Save de.
-5. GitHub Pages bir HTTPS adresi verir. Adresi Samsung tablette Chrome ile aç. İlk açılışta internet açık olsun ve sayfanın tamamen yüklenmesini bekle.
-6. Chrome menüsü (⋮) > Ana ekrana ekle veya Uygulamayı yükle seçeneğine bas. Seçenek cihaz/Chrome sürümüne göre değişebilir.
-7. Kurulan İlim Takip simgesini bir kez internet açıkken aç. Ardından uçak modunu açıp test et. Çalışıyorsa çevrimdışı kullanabilirsin.
+ÖNEMLİ VERİ NOTU:
+Uygulama mevcut localStorage anahtarını (ilimTakipData) korur. Var olan dersler, günlük notlar, çalışma kayıtları, ders listesi, saatli program ve günlük takipler aynı cihazda korunmalıdır. Yine de güncellemeden önce uygulamanın Yedekleme bölümünden JSON yedeği indirin.
 
-VERİLER VE YEDEK
-- Ders, görev, tik ve çalışma kayıtları cihazındaki tarayıcı depolamasında tutulur; otomatik olarak başka cihazla eşitlenmez.
-- Ayarlar > Yedekleme bölümünden düzenli olarak JSON yedeği indir. Tabletteki dosyalar uygulamadan bağımsız saklanır.
-- Tarayıcı/site verilerini silmek kayıtları silebilir. Yedek dosyanı güvenli bir klasörde tut.
-- Uygulamayı farklı bir URL/alan adına taşırsan tarayıcı bunu farklı site kabul edebilir; eski kayıtlar otomatik taşınmayabilir. Önce yedek alıp yeni uygulamada geri yükle.
-- İlk kurulum ve ana ekrana ekleme için internet gerekir; günlük kullanım ve daha önce açılmış uygulama çevrimdışı tasarlanmıştır.
+Yeni sürümde haftalık görevler haftanın Pazartesi tarihine göre saklanır. Eski günlük görev kayıtları silinmez; eski veride kalır.
+
+GitHub Pages güncellemesi: Depoda her dosyayı aynı adla açıp kalem (Edit) veya Upload files ile güncelleyin. Tüm dosyaları ana dizine koyun. Ardından siteyi açıp yenileyin. Çevrimdışı uygulama eski sürümü gösterirse internet açıkken siteyi bir kez yenileyin, birkaç saniye bekleyin ve uygulamayı yeniden açın.
