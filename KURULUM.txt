@@ -1,15 +1,23 @@
-İLİM TAKİP — GÜNCELLEME PAKETİ
+İLİM TAKİP — YENİ TASARIM (v5)
 
-Dosyalar GitHub Pages deposunun ana dizinine yüklenmelidir:
-- index.html
-- manifest.webmanifest
-- sw.js
-- icon.svg
-- KURULUM.txt
+ÖNE ÇIKANLAR
+- İlk ekran artık Program bölümüdür; günlük/haftalık görünüm bulunur.
+- Etkinlik saatlerini kendin belirlersin.
+- Etkinlikler yalnızca seçili güne eklenebilir veya haftalık tekrarlanabilir.
+- Tekrarlanan etkinliği düzenlerken yalnızca seçili gün için farklılaştırabilirsin.
+- Haftalık ve aylık görev/ödev listeleri ayrıdır.
+- Çalışma sayacı, manuel kayıt, günlük notlar, dersler, takip, raporlar ve yedekleme ayrı bölümlerdedir.
+- Tablet ekranında daha geniş yerleşim ve daha büyük program kartları kullanılır.
 
-ÖNEMLİ VERİ NOTU:
-Uygulama mevcut localStorage anahtarını (ilimTakipData) korur. Var olan dersler, günlük notlar, çalışma kayıtları, ders listesi, saatli program ve günlük takipler aynı cihazda korunmalıdır. Yine de güncellemeden önce uygulamanın Yedekleme bölümünden JSON yedeği indirin.
+KAYITLARIN KORUNMASI
+Bu sürüm de localStorage anahtarını `ilimTakipData` olarak kullanır ve eski kayıt yapısını yükler. Aynı cihaz ve aynı tarayıcıdaki kayıtlar normalde korunur. Yine de güncellemeden önce uygulamanın Yedekleme bölümünden JSON yedeği indirmen önerilir. Cihazlar arası otomatik eşitleme bu sürümde yoktur.
 
-Yeni sürümde haftalık görevler haftanın Pazartesi tarihine göre saklanır. Eski günlük görev kayıtları silinmez; eski veride kalır.
+GÜNCELLEME
+1. ZIP dosyasını indir ve aç.
+2. GitHub deposu alii42/Takip içinde Upload files sayfasını aç.
+3. ZIP içindeki şu 5 dosyayı yükle: index.html, manifest.webmanifest, sw.js, icon.svg, KURULUM.txt.
+4. Dosyalar kök dizinde olsun; `Commit changes` düğmesine bas.
+5. GitHub Pages yayını tamamlandıktan sonra https://alii42.github.io/Takip/?v=5 bağlantısını Chrome'da aç.
+6. Yeni sürüm açıldıktan sonra ana ekrandaki uygulamayı kapatıp tekrar aç.
 
-GitHub Pages güncellemesi: Depoda her dosyayı aynı adla açıp kalem (Edit) veya Upload files ile güncelleyin. Tüm dosyaları ana dizine koyun. Ardından siteyi açıp yenileyin. Çevrimdışı uygulama eski sürümü gösterirse internet açıkken siteyi bir kez yenileyin, birkaç saniye bekleyin ve uygulamayı yeniden açın.
+Not: Site verilerini temizleme; kayıtlar cihazda saklanır.
