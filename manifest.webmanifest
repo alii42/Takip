@@ -1,1 +1,15 @@
-{"name":"İlim Takip","short_name":"İlim Takip","description":"Sade, çevrimdışı kişisel ilim ve çalışma takip uygulaması","start_url":"./","scope":"./","display":"standalone","background_color":"#f3f6f2","theme_color":"#174b3b","icons":[{"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]}
+{
+  "id": "./index.html",
+  "name": "İlim — Kişisel Takip",
+  "short_name": "İlim",
+  "description": "Çevrimdışı ders, görev, kitap ve ilmî çalışma takibi.",
+  "lang": "tr-TR",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f4f7f3",
+  "theme_color": "#286b4b",
+  "icons": [
+    {"src":"./icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}
+  ]
+}
