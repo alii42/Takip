@@ -1,22 +1,34 @@
-İLİM TAKİP — ÖN İZLEME / KURULUM
+İLİM TAKİP — KURULUM VE GÜNCELLEME
 
-Bu paket, çevrimdışı kullanılmak üzere hazırlanmış bir web uygulaması (PWA) prototipidir.
+BU PAKETTE
+- index.html: uygulamanın arayüzü ve işlevleri
+- manifest.json: ana ekrana ekleme / PWA bilgileri
+- sw.js: çevrimdışı önbellek ve sürüm yenileme
+- icon.svg, icon-192.png, icon-512.png: uygulama simgeleri
 
-ÖN İZLEME
-- index.html dosyasını tarayıcıda açarak tasarımı görebilirsin.
-- Dosyayı doğrudan açma yöntemi, uygulama yükleme ve çevrimdışı çalışma özelliklerini tam olarak etkinleştirmez.
+GITHUB PAGES'E YÜKLEME
+1. https://github.com/alii42/Takip adresini aç.
+2. Depo ana sayfasında Add file > Upload files seçeneğine gir.
+3. Bu klasördeki ALTI dosyayı (index.html, manifest.json, sw.js, icon.svg, icon-192.png, icon-512.png) yükleme alanına ekle.
+4. Commit changes ile kaydet. Dosyaları depo kök dizinine yükle; başka bir klasörün içine koyma.
+5. Bir dakika kadar bekle. Site: https://alii42.github.io/Takip/?v=4
 
-SAMSUNG TABLETTE UYGULAMA GİBİ KURMA
-1. Paketi bir HTTPS statik site barındırma hizmetine yükle (ör. GitHub Pages). Dosyaların hepsi aynı klasörde olmalı: index.html, manifest.json, sw.js, icon-192.png, icon-512.png.
-2. Yayınlanan HTTPS adresini Samsung Internet veya Chrome ile aç.
-3. Tarayıcı menüsünde “Ana ekrana ekle”, “Uygulamayı yükle” veya benzer seçeneği seç.
-4. Ana ekrandaki İlim Takip simgesinden aç. İlk açılışta sayfanın yüklenmesini bekle; sonra temel arayüz çevrimdışı önbellekten açılabilir.
+ÖNEMLİ — ESKİ SÜRÜM AÇILIRSA
+- Chrome'da yukarıdaki ?v=4 bağlantısını aç.
+- Ana ekrana eklenmiş eski simgeyi açmak yerine önce Chrome'da test et.
+- Eski sürüm görünürse Chrome > Ayarlar > Site ayarları > Tüm siteler > alii42.github.io > Verileri temizle; sonra siteyi yeniden aç.
+- Bu işlem yerel uygulama kayıtlarını silebilir. Mevcut verilerin varsa önce Ayarlar ve yedekleme bölümünden JSON yedeği al.
 
 VERİLER
-- Kayıtlar aynı tarayıcının yerel depolamasında tutulur; sunucuya gönderilmez.
-- Tarayıcı/site verileri temizlenirse veya cihaz bozulursa kayıtlar kaybolabilir. Ayarlar > Yedeği indir bölümünden düzenli JSON yedeği al.
-- Geri yükleme mevcut verilerin yerine yedeği koyar. Önce mevcut durumu ayrıca yedekle.
-- Bu prototipte PDF dosyalarını uygulama içine yükleme ve eşzamanlı cihazlar arası senkronizasyon bulunmuyor.
+Kayıtlar sunucuya gönderilmez; tarayıcının yerel depolamasında tutulur. Tarayıcı verileri silinirse kayıtlar kaybolabilir. Düzenli JSON yedeği al.
 
-ÖNEMLİ
-Bu ilk çalışan prototiptir. Kurmadan önce arayüzü ve temel işlevleri kontrol et; ihtiyaçlarına göre düzeltme yapabiliriz. HTTPS üzerinde yayımlanmadan PWA kurulumu ve service worker önbelleği her tarayıcıda çalışmaz.
+İLK AÇILIŞTA HAZIR GELEN PROGRAM
+Pazartesi: İsagoci, Bilim Felsefesi, Vaz‘ İlmi
+Salı: Münazara, Şerhu Suğra
+Çarşamba: İsagoci, Şerhu Suğra
+Perşembe: Vaz‘ İlmi, İsagoci, Münazara
+Cuma: Şerhu Suğra
+Cumartesi: okuma / tekrar
+Pazar: serbest gün / haftalık değerlendirme
+
+Ders süreleri başlangıçta 60 dakika olarak gelir; saatler sabit değildir. Alışkanlıklarda günlük 1 saat video, 1 saat Türkçe okuma, pazartesi-cumartesi iki kitaptan 25'er sayfa başlangıç takibi vardır.
